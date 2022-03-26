@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Pacifico&family=Poppins:wght@500&display=swap');
 
 /* Normalize */
 * {
@@ -10,9 +10,19 @@
 }
 /*Globales*/
 
-html {
+.html {
     font-family:'Poppins', sans-serif;
     font-size: 62,5%;
+    font-weight: 50%;
+}
+
+
+
+.body{
+    font-family:var(--font-primary);
+    line-height: var(--secundary);
+    font-size: medium;
+    
 }
 header {
     background-color: black;
@@ -27,7 +37,7 @@ header {
 
 .logo{
     width: 100px;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +51,7 @@ header {
 ul {
     list-style-type: none;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -63,7 +74,7 @@ a {
     width: 100%;
     height: 500px;
     position: relative;
-    top: 60px;
+    top: 50px;
     background-image: url(../image/imagenbienvenidos.jpg);
     background-position: center;
     background-size: cover;
@@ -80,9 +91,6 @@ a {
     color:#F4F6F5;    
 }
 
-
-
-
 .frase p{
     max-width: 800px;
     height: 200px;
@@ -92,11 +100,20 @@ a {
     justify-content: center;
     align-items: center;
     color:#bbcac2;
-    font-size: 20px;
+    font-size: 30px;
     animation-name: amamos_permanecer;
     animation-duration: 6s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
+}
+.frase_dos {
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    max-width: 800px;
+    height: 80px;
+    margin: auto;
+    text-align: center;
 }
 
 @keyframes amamos_permanecer {
@@ -125,6 +142,8 @@ a {
     width: 100%;
     height: 50%;
     background-color: black;
+    font-size: small;
+    
    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -133,13 +152,11 @@ a {
     font-size: small;
     color: rgb(255, 255, 255); 
     text-align:center; 
-
 }
 .pie-pagina .grupodos .box{
     font-size: small;
     color: rgb(255, 255, 255);
     text-align:center;
-
 }
 .grupotres .box{
     font-size: small;
@@ -148,7 +165,8 @@ a {
     font-size: small;
     color: rgb(255, 255, 255);
     text-align: center;
-}
+}  
+
 
 /*Nosotros*/
 
@@ -169,10 +187,11 @@ a {
     padding-top: 40px;
     text-align: justify;
     margin: 20px;
+    border-inline-start: #021f32;
     
 }
 .parrafo_container_history{
-    font-size: medium;
+    font-size: small;
     gap: 20px;
 }
 .imageiglesia{
@@ -189,30 +208,72 @@ a {
     margin: 20px;
    
 }
+.parrafo_container_valores{
+    font-size: small;
+    
+}
 .container-hacemos{
     grid-column: 2 /5 ;
     grid-row: 3;
     text-align: justify;
     margin: 20px;
+    
+}
+.parrafo_container_hacemos{
+    font-size: small;
+    gap: 20px;
 }
 
 /*Blog*/
-
-
 .container_blog {
+    max-width: 1080px;
     padding-top: 80px;
     padding-inline-end: 80px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 150vh;
+}
+
+.fotoblog {
+    display: inline-flex;
+    gap: 40px;
+    height: 120vh;
     margin: auto;
-    margin-top: 20px;
+    position: center;
+    text-align: justify;   
     
 }
-.fotoblog{
-    grid-column: 1 /3;
-    grid-row: 1 / 5;
+.carduno{
+    background-color: #e8fd2a;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+
+
+.carddos{
+    background-color: #1fdd7e;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+
+.cardtres{
+    background-color: #93a0eb;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+.imagenmujeres {
+    grid-column: 2 / 3;
+    grid-row: 2/ 3; 
+}
+.imagenrenuevin {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; 
 }
 .anuncios{
     grid-column: 3 / 6;
@@ -238,7 +299,7 @@ h2 {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 80px;
+    margin-top: 50px;
     float:none;
     animation-name: moving;
     animation-duration: 1s;
@@ -253,6 +314,8 @@ h2 {
         width: 100%;
     }
 }
+
+
 /*Videos--sección--mensajes*/
 .videos_mensajes{
     display: grid;
@@ -261,7 +324,8 @@ h2 {
 }
 .videoprincipal {
     text-align: center;
-    margin: 0px auto;
+    margin: auto;
+    width: 1080px;
     padding: 10px;
     background-color: #F4F6F5;
     grid-column: 1 / 4;
@@ -275,11 +339,21 @@ h2 {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
 }
-.fotoblog{
-    position: relative;
-    width: auto;
-    margin: auto;
-}  
+.imagenpredica {
+    grid-column: 2 /3;
+    grid-row: 2 / 3; 
+}
+
+.imagenmujeres {
+    grid-column: 2 /3;
+    grid-row: 2/ 3; 
+}
+.imagenrenuevin {
+    grid-column: 2 /3;
+    grid-row: 3 / 4; 
+}
+
+ 
 
 
 /*Contáctanos*/
@@ -290,7 +364,7 @@ h2 {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin: auto;
-    max-height:100vh ;
+    max-height:infinite ;
     background-image: linear-gradient(to top, #9d9499, #877b85, #6f6372, #564d61, #3b3851, #293047, #17273d, #021f32, #011d29, #041a21, #081719, #0c1313);
 }
 .form{ 
@@ -347,7 +421,7 @@ h2 {
     transition: transform .5s, color .3s;
 }
 .form-submit {
-    background-color: rgb(126, 126, 128);
+    background-color: rgba(39, 39, 236, 0.829);
     color: #F4F6F5;
     font-style: normal;
     font-weight: 200;
@@ -367,6 +441,7 @@ h2 {
     transition: transform .4s;
 }
 
+
 @media screen and (max-width: 768px) {
   /*header*/  
     .navbar {
@@ -379,11 +454,15 @@ h2 {
         font-size: 0.8rem;
     }
     .frase p{
-        font-size:0.8rem ;
+        font-size:1rem ;
        
     }
-        
+    .frase_dos {
+        font-size:0.8rem ;
+
+    }    
   /*Footer*/
+    
     .pie-pagina .grupouno .box{
         font-size: 0.5rem;
     }

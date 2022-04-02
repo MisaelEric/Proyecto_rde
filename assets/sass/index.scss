@@ -1,65 +1,19 @@
+/*Misc */ 
 
-.container-cover{
-    width: 100%;
-    height: 500px;
-    position: relative;
-    top: 50px;
-    background-image: url(../image/imagenbienvenidos.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.container-info-cover{
-    max-width: 800px;
-    height: 500px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#F4F6F5;    
-}
-.frase p{
-    max-width: 800px;
-    height: 200px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#bbcac2;
-    font-size: 30px;
-    animation-name: amamos_permanecer;
-    animation-duration: 6s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-}
-.frase_dos {
-    justify-content: center;
-    align-items: center;
-    font-style: oblique;
-    max-width: 800px;
-    height: 80px;
-    margin: auto;
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Pacifico&family=Poppins:wght@500&display=swap');
+@import './misc/normalize';
+@import './misc/titles'; 
 
-@keyframes amamos_permanecer {
-    0% {color:#bbcac2;
-    }
-    50% {color:rgba(135, 20, 243, 0.856);
-    }
-    80% {color:#564d61;
-    }
-    100%{color:rgba(0 0 0 / 30%)}
-}
-.imagehome {
-    max-width: 1080px;
-    margin: auto;
-    align-items: center;
-    padding-bottom: 40px;
-    display:block;
-    justify-content: center;
-    text-align: center;
-}
+/*partials */ 
+
+@import './partials/header';
+@import './partials/footer';
+
+/*views */ 
+
+@import './views/home';
+@import './views/nosotros';
+@import './views/mensajes';
+@import './views/blog';
+@import './views/contacto';
 

@@ -20,3 +20,14 @@
     grid-column: 1 / 4;
     grid-row: 3 / 4;
 }
+
+.container_blog{
+    font-size: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+.h2 {
+    font-size: 0.3rem;
+    }
+
+}

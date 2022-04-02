@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Pacifico&family=Poppins:wght@500&display=swap');
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+/*Globales*/
+
+.html {
+    font-family:'Poppins', sans-serif;
+    font-size: 62,5%;
+    font-weight: 50%;
+}
+
+
+
+.body{
+    font-family:var(--font-primary);
+    line-height: var(--secundary);
+    font-size: medium;
+    min-height: 100vh;
+ 
+       
+}
+header {
+    background-color: black;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+}
+
+
+.logo{
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    
+    
+     
+} .logo:hover{
+    transform: rotate(20deg);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: auto;
+}
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+} 
+
+/*Portada*/
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    background-image: url(../image/imagenbienvenidos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#F4F6F5;    
+}
+
+.frase p{
+    max-width: 800px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#bbcac2;
+    font-size: 30px;
+    animation-name: amamos_permanecer;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.frase_dos {
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    max-width: 800px;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes amamos_permanecer {
+    0% {color:#bbcac2;
+    }
+    50% {color:rgba(135, 20, 243, 0.856);
+    }
+    80% {color:#564d61;
+    }
+    100%{color:rgba(0 0 0 / 30%)}
+}
+
+.imagehome {
+    max-width: 1080px;
+    margin: auto;
+    align-items: center;
+    padding-bottom: 40px;
+    display:block;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Footer*/
+
+.pie-pagina .grupouno .box{
+    font-size: small;
+    color: rgb(255, 255, 255); 
+    text-align:center; 
+    margin-top: auto;
+    bottom: 0;
+  
+}
+.pie-pagina .grupodos .box{
+    font-size: small;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    margin-top: auto;
+    bottom: 0%;
+   
+}
+.grupotres .box{
+    font-size: small;
+    text-align: center;
+    background-color: black;
+    font-size: small;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: auto;
+    bottom: 0;
+    
+} 
+.pie-pagina{
+    background-color: black;
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    bottom: 0;   
+} 
+
+
+/*Nosotros*/
+
+
+.container-all {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+
+.container-history{
+    grid-column: 2 / 5;
+    grid-row: 1 ;
+    padding-top: 40px;
+    text-align: justify;
+    margin: 20px;
+    border-inline-start: #021f32;
+    
+}
+.parrafo_container_history{
+    font-size: small;
+    gap: 20px;
+}
+.imageiglesia{
+    grid-column: 3 /4 ;
+    grid-row: 3;
+    justify-content: center;
+    padding-top: 40px;
+    margin: 25px;
+}
+.container-valores{
+    grid-column: 2 /5 ;
+    grid-row: 2;
+    text-align: justify;
+    margin: 20px;
+   
+}
+.parrafo_container_valores{
+    font-size: small;
+    
+}
+.container-hacemos{
+    grid-column: 2 /5 ;
+    grid-row: 3;
+    text-align: justify;
+    margin: 20px;
+    
+}
+.parrafo_container_hacemos{
+    font-size: small;
+    gap: 20px;
+}
+
+/*Blog*/
+.container_blog {
+    max-width: 1080px;
+    padding-top: 80px;
+    padding-inline-end: 80px;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.fotoblog {
+    display: inline-flex;
+    gap: 40px;
+    height: 120vh;
+    margin: auto;
+    position: center;
+    text-align: justify;   
+    
+}
+.carduno{
+    background-color: #e8fd2a;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+
+
+.carddos{
+    background-color: #1fdd7e;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+
+.cardtres{
+    background-color: #93a0eb;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+.imagenmujeres {
+    grid-column: 2 / 3;
+    grid-row: 2/ 3; 
+}
+.imagenrenuevin {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; 
+}
+.anuncios{
+    grid-column: 3 / 6;
+    grid-row: 1;
+}
+.eventos{
+    grid-column: 3 / 6;
+    grid-row: 2;
+}
+.reflexiones{
+    grid-column: 3 / 6;
+    grid-row: 3;
+}
+
+/*Título Mensajes y Conócenos*/
+h2 {
+    width: 100%;
+    height: 80px;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(to top, #9d9499, #877b85, #6f6372, #564d61, #3b3851, #293047, #17273d, #021f32, #011d29, #041a21, #081719, #0c1313);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    float:none;
+    animation-name: moving;
+    animation-duration: 1s;
+
+}
+
+@keyframes moving {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+/*Videos--sección--mensajes*/
+.videos_mensajes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.videoprincipal {
+    text-align: center;
+    margin: auto;
+    width: 1080px;
+    padding: 10px;
+    background-color: #F4F6F5;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+.seccionvideos {
+    text-align: center;
+    margin: 0px auto;
+    padding: 5px;
+    background-color: #F4F6F5;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+.imagenpredica {
+    grid-column: 2 /3;
+    grid-row: 2 / 3; 
+}
+
+.imagenmujeres {
+    grid-column: 2 /3;
+    grid-row: 2/ 3; 
+}
+.imagenrenuevin {
+    grid-column: 2 /3;
+    grid-row: 3 / 4; 
+}
+
+ 
+
+
+/*Contáctanos*/
+
+.formulario{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: auto;
+    max-height:infinite ;
+    background-image: linear-gradient(to top, #9d9499, #877b85, #6f6372, #564d61, #3b3851, #293047, #17273d, #021f32, #011d29, #041a21, #081719, #0c1313);
+}
+.form{ 
+    background-color: #F4F6F5;
+    margin: 20px;
+    width: 90%;
+    padding-top: 80px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: center;
+   grid-column: 3 / 5;
+   grid-row: 1 / 5;
+   
+}
+
+.form__title {
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+.form__paraghaph { 
+    font-weight: 300;
+}
+.form-container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form-group {
+    position: relative;
+    --color: #5757577e;
+}
+.form_input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+.form_input:focus + .form-label,
+.form_input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color:rgba(135, 20, 243, 0.856)
+}
+.form-label {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.form-submit {
+    background-color: rgba(39, 39, 236, 0.829);
+    color: #F4F6F5;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    padding: .8em 0;
+    border-radius: .5em;
+}
+.form-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #706c6c;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+
+@media screen and (max-width: 768px) {
+  /*header*/  
+    .navbar {
+        font-size: 0.5rem; 
+        height: 50px;
+    }
+
+  /*Portada*/
+    .container-info-cover{
+        font-size: 0.8rem;
+    }
+    .frase p{
+        font-size:1rem ;
+       
+    }
+    .frase_dos {
+        font-size:0.8rem ;
+
+    }    
+  /*Footer*/
+    .pie-pagina{
+        width: 100%;
+    }
+  
+    .pie-pagina .grupouno .box{
+        font-size: 0.5rem;
+    }
+    .pie-pagina .grupodos .box{
+        font-size: 0.5rem;
+    }
+    .grupotres .box{
+        font-size: 0.4rem;
+      }  
+
+  /*Contacto*/
+    .form {
+        font-size: 0.3rem;
+        border-radius: 20px;  
+    }
+
+    /*Blog*/
+    .container_blog{
+        font-size: 0.3rem;
+    }
+    
+
+    /*Mensajes*/
+    .h2 {
+        font-size: 0.3rem;
+
+    }
+
+    .form-submit{
+         font-size: 0.3rem;
+    }
+
+    .form-submit {
+        
+        border-radius: .6em;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    /*header*/  
+      .navbar {
+          font-size: 0.7rem; 
+          height: 50px;
+      }
+  
+}

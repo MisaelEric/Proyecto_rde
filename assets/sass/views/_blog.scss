@@ -21,7 +21,7 @@
     padding-top: 20px;
     padding: 4.5em 3em;
     border-radius: 40px;
-    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+    box-shadow: 0 5px 10px -5px;
    text-align: left;
 }
 
@@ -31,7 +31,7 @@
     padding-top: 20px;
     padding: 4.5em 3em;
     border-radius: 40px;
-    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+    box-shadow: 0 5px 10px -5px;
    text-align: left;
 }
 
@@ -40,7 +40,7 @@
     padding-top: 20px;
     padding: 4.5em 3em;
     border-radius: 40px;
-    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+    box-shadow: 0 5px 10px -5px;
    text-align: left;
 }
 
@@ -71,3 +71,8 @@
     grid-row: 3;
 }
 
+@media screen and (max-width: 768px) {
+    .container_blog{
+        font-size: 0.3rem;
+    }
+}

@@ -1,0 +1,68 @@
+
+
+@media screen and (max-width: 768px) {
+    /*header*/  
+      .navbar {
+          font-size: 0.6rem; 
+          height: 50px;
+      }
+  
+    /*Portada*/
+      .container-info-cover{
+          font-size: 0.8rem;
+      }
+      .frase p{
+          font-size:1rem ;
+         
+      }
+      .frase_dos {
+          font-size:0.8rem ;
+  
+      }    
+    /*Footer*/
+      .pie-pagina{
+          width: 100%;
+      }
+    
+      .pie-pagina .grupouno .box{
+          font-size: 0.5rem;
+      }
+      .pie-pagina .grupodos .box{
+          font-size: 0.5rem;
+      }
+      .grupotres .box{
+          font-size: 0.4rem;
+        }  
+  
+    /*Contacto*/
+      .form {
+          font-size: 0.3rem;
+          border-radius: 20px;  
+      }
+  
+      /*Blog*/
+      .container_blog{
+          font-size: 0.3rem;
+      }
+      
+  
+      /*Mensajes*/
+      .h2 {
+          font-size: 0.3rem;
+  
+      }
+  
+      .form-submit{
+           font-size: 0.3rem;
+          border-radius: .4em;
+      }
+  }
+
+@media screen and (min-width: 400px) {
+    /*header*/  
+      .navbar {
+          font-size: 0.5rem; 
+          height: 50px;
+      }
+  
+}

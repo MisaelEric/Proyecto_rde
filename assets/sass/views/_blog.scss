@@ -1,0 +1,73 @@
+
+.container_blog {
+    max-width: 1080px;
+    padding-top: 80px;
+    padding-inline-end: 80px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.fotoblog {
+    display: inline-flex;
+    gap: 40px;
+    height: 120vh;
+    margin: auto;
+    position: center;
+    text-align: justify;   
+    
+}
+.carduno{
+    background-color: #e8fd2a;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+
+
+.carddos{
+    background-color: #1fdd7e;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+
+.cardtres{
+    background-color: #93a0eb;
+    padding-top: 20px;
+    padding: 4.5em 3em;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+   text-align: left;
+}
+
+.imagenpredica {
+    grid-column: 2 /3;
+    grid-row: 2 / 3; 
+}
+
+.imagenmujeres {
+    grid-column: 2 /3;
+    grid-row: 2/ 3; 
+}
+.imagenrenuevin {
+    grid-column: 2 /3;
+    grid-row: 3 / 4; 
+}
+
+.anuncios{
+    grid-column: 3 / 6;
+    grid-row: 1;
+}
+.eventos{
+    grid-column: 3 / 6;
+    grid-row: 2;
+}
+.reflexiones{
+    grid-column: 3 / 6;
+    grid-row: 3;
+}
+

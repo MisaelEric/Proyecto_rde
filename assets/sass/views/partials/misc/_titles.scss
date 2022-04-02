@@ -1,0 +1,25 @@
+h2 {
+    width: 100%;
+    height: 80px;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(to top, #9d9499, #877b85, #6f6372, #564d61, #3b3851, #293047, #17273d, #021f32, #011d29, #041a21, #081719, #0c1313);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    float:none;
+    animation-name: moving;
+    animation-duration: 1s;
+
+}
+
+@keyframes moving {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}

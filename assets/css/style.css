@@ -22,7 +22,9 @@
     font-family:var(--font-primary);
     line-height: var(--secundary);
     font-size: medium;
-    
+    min-height: 100vh;
+ 
+       
 }
 header {
     background-color: black;
@@ -40,11 +42,10 @@ header {
     height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size:medium;
     
-}
-.logo:hover{
+    
+     
+} .logo:hover{
     transform: rotate(20deg);
 }
 
@@ -67,7 +68,7 @@ a {
 .navbar .menu {
     display: flex;
     gap: 20px;
-}
+} 
 
 /*Portada*/
 .container-cover{
@@ -79,7 +80,7 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} 
 .container-info-cover{
     max-width: 800px;
     height: 500px;
@@ -126,8 +127,6 @@ a {
     100%{color:rgba(0 0 0 / 30%)}
 }
 
-
-
 .imagehome {
     max-width: 1080px;
     margin: auto;
@@ -137,26 +136,24 @@ a {
     justify-content: center;
     text-align: center;
 }
+
 /*Footer*/
-.pie-pagina{
-    width: 100%;
-    height: 50%;
-    background-color: black;
-    font-size: small;
-    
-   
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+
 .pie-pagina .grupouno .box{
     font-size: small;
     color: rgb(255, 255, 255); 
     text-align:center; 
+    margin-top: auto;
+    bottom: 0;
+  
 }
 .pie-pagina .grupodos .box{
     font-size: small;
     color: rgb(255, 255, 255);
     text-align:center;
+    margin-top: auto;
+    bottom: 0%;
+   
 }
 .grupotres .box{
     font-size: small;
@@ -165,7 +162,18 @@ a {
     font-size: small;
     color: rgb(255, 255, 255);
     text-align: center;
-}  
+    margin-top: auto;
+    bottom: 0;
+    
+} 
+.pie-pagina{
+    background-color: black;
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    bottom: 0;   
+} 
 
 
 /*Nosotros*/
@@ -173,16 +181,16 @@ a {
 
 .container-all {
     display: grid;
-    min-height: 80vh;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     height: 100vh;
+    width: 100vw;
     margin: auto;
 }
 
 
 .container-history{
-    grid-column: 2 / 4;
+    grid-column: 2 / 5;
     grid-row: 1 ;
     padding-top: 40px;
     text-align: justify;
@@ -195,8 +203,8 @@ a {
     gap: 20px;
 }
 .imageiglesia{
-    grid-column: 4 /5 ;
-    grid-row: 1;
+    grid-column: 3 /4 ;
+    grid-row: 3;
     justify-content: center;
     padding-top: 40px;
     margin: 25px;
@@ -229,6 +237,9 @@ a {
     max-width: 1080px;
     padding-top: 80px;
     padding-inline-end: 80px;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 .fotoblog {
@@ -462,7 +473,10 @@ h2 {
 
     }    
   /*Footer*/
-    
+    .pie-pagina{
+        width: 100%;
+    }
+  
     .pie-pagina .grupouno .box{
         font-size: 0.5rem;
     }
@@ -497,6 +511,15 @@ h2 {
 
     .form-submit {
         
-        border-radius: .4em;
+        border-radius: .6em;
     }
+}
+
+@media screen and (min-width: 350px) {
+    /*header*/  
+      .navbar {
+          font-size: 0.5rem; 
+          height: 50px;
+      }
+  
 }

@@ -31,17 +31,13 @@ header {
 }
 
 .navbar {
-    display: flex;
     height: 10vh;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, space-between, center, 2rem);
     max-width: 1080px;
     margin: auto;
     
 
     .menu {
-        display: flex;
-        gap: 20px;
-        
+     @include flex(row, space-between, center, 2rem);   
     }
 }

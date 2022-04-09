@@ -1,7 +1,7 @@
 $paddings: (
     large: 3rem,
     medium: 2rem,
-    small: 1.5rem,
+    small: 0.5rem,
 );
 
 @each $var, $val in $paddings {

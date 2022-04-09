@@ -10,15 +10,16 @@
         font-size: small;
         color: rgb(255, 255, 255); 
         text-align:center; 
-        
-       
+        p{
+            padding: map-get($paddings , small);
+        }
       
     }
     .grupodos .box{
         font-size: small;
         color: rgb(255, 255, 255);
         text-align:center;
-    } 
+           } 
 } 
 .grupotres .box{
     font-size: small;

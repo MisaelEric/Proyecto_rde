@@ -1,0 +1,22 @@
+$paddings: (
+    large: 3rem,
+    medium: 2rem,
+    small: 1.5rem,
+);
+
+@each $var, $val in $paddings {
+    .p-#{$var} {
+        padding: #{$val};
+    }
+}
+
+$sizes: (
+    text: 2rem,
+
+);
+
+@each $var, $val in $sizes {
+    .s-#{$var} {
+        size: #{$val};
+    }
+}

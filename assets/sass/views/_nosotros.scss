@@ -1,9 +1,9 @@
 
-.container-all {
+.container-all-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    height: 100vh;   
+    height: 100%;   
     margin: auto;
 }
 
@@ -20,7 +20,9 @@
 .parrafo_container_history{
     font-size: small;
     gap: 20px;
+
 }
+
 .imageiglesia{
     grid-column: 3 /4 ;
     grid-row: 3;
@@ -50,3 +52,6 @@
     font-size: small;
     gap: 20px;
 }
+
+
+

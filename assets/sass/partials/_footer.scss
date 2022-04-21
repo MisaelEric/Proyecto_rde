@@ -4,6 +4,7 @@
     font-size: small;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
     width: 100%;  
     
     .grupouno .box{
@@ -28,7 +29,6 @@
     font-size: small;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-top: auto;
-    bottom: 0;   
+  
 }
     

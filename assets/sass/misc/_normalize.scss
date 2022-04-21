@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-.html {
+html {
     font-family:'Poppins', sans-serif;
     font-size: 62,5%;
     font-weight: 50%;
@@ -16,17 +16,18 @@
     position: relative;
 }
 
-.body{
+body{
     font-family:var(--font-primary);
     line-height: var(--secundary);
     font-size: medium;
-    min-height: 100%;
-    margin: 0;
-    margin-bottom: 40px;    
+    min-height: 100vh;
+    margin-bottom: 0;
+    padding-bottom: 10rem;
+    color: var(--secundary);
 }
-.footer{
-    margin-top: auto;
-    bottom: 0;
+footer{
     position: absolute;
+    bottom: 0;
+    width: 100%;
 
 }

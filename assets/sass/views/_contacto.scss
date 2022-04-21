@@ -1,11 +1,12 @@
 
 .formulario{
+    height: 100vh;
     padding-top: 80px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    margin: auto;
-    max-height:infinite ;
+    margin: 0;
+    max-height:infinite;
     background-image: linear-gradient(to top, #9d9499, #877b85, #6f6372, #564d61, #3b3851, #293047, #17273d, #021f32, #011d29, #041a21, #081719, #0c1313);
 }
 .form{ 
@@ -14,11 +15,12 @@
     width: 90%;
     padding-top: 80px;
     padding: 4.5em 3em;
+    padding-bottom: 10px;
     border-radius: 40px;
     box-shadow: 0 5px 10px -5px;
     text-align: center;
     grid-column: 3 / 5;
-    grid-row: 1 / 5;
+    grid-row: 1 / 6;
    
 }
 
@@ -65,9 +67,9 @@
     background-color: rgba(39, 39, 236, 0.829);
     color: #F4F6F5;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 1rem;
-    padding: .8em 0;
+    padding: .4em 0;
     border-radius: .5em;
 }
 .form-line{
@@ -82,7 +84,7 @@
     transition: transform .4s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:1080px) {
        .form {
         font-size: 0.3rem;
         border-radius: 20px;  

@@ -19,10 +19,6 @@ header {
     text-align: center;
     
 
-    &:hover{
-        transform: rotate(20deg);
-    }
-
 }
 
 .ul {
@@ -69,11 +65,13 @@ a {
     
 }
 .navbar-collapse {
-    flex-basis: 100%;
+    flex-basis: 50%;
     flex-grow: 0;
-    color: white;
+    
+    
 
 }
+
 
 .navbar-brand {
     color: beige;

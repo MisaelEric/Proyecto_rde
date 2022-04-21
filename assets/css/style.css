@@ -79,8 +79,6 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center; }
-  .logo:hover {
-    transform: rotate(20deg); }
 
 .ul {
   list-style-type: none; }
@@ -120,9 +118,8 @@ a {
   justify-content: space-between; }
 
 .navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 0;
-  color: white; }
+  flex-basis: 50%;
+  flex-grow: 0; }
 
 .navbar-brand {
   color: beige;

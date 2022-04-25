@@ -118,8 +118,9 @@ a {
   justify-content: space-between; }
 
 .navbar-collapse {
-  flex-basis: 50%;
-  flex-grow: 0; }
+  flex-basis: 100%;
+  flex-grow: 0%;
+  background-color: #212529; }
 
 .navbar-brand {
   color: beige;
